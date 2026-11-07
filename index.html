@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>宅建士 並走ノート</title>
+<meta name="description" content="宅建士（宅地建物取引士）試験の毎日の学習に並走する問題演習・条文ノート・進捗管理アプリ">
+<meta name="theme-color" content="#f6f4ee" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14171c" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e5145'/%3E%3Cpath d='M14 46 L32 16 L50 46 Z' fill='none' stroke='%23f6f4ee' stroke-width='4' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='38' r='4' fill='%23d9472b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/today" class="brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">宅建士 <b>並走ノート</b></span>
+    </a>
+    <div class="topbar-count" id="topCount"></div>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <nav class="tabbar" aria-label="メインメニュー">
+    <a href="#/today" data-tab="today"><span class="ti">今</span>今日</a>
+    <a href="#/drill" data-tab="drill"><span class="ti">問</span>演習</a>
+    <a href="#/laws" data-tab="laws"><span class="ti">条</span>条文</a>
+    <a href="#/mock" data-tab="mock"><span class="ti">模</span>模試</a>
+    <a href="#/plan" data-tab="plan"><span class="ti">計</span>計画</a>
+  </nav>
+
+  <script src="data/questions.js"></script>
+  <script src="data/laws.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
